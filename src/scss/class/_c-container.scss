@@ -5,4 +5,8 @@
     margin-right: auto;
     padding-left: 25px;
     padding-right: 25px;
+
+    @media(max-width: 991px){
+        max-width: 500px;
+    }
 }

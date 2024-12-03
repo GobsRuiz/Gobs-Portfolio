@@ -1,12 +1,12 @@
 .aboutMe{
     display: grid;
     grid-template-columns: 1fr 300px;
-    column-gap: 50px;
+    column-gap: 60px;
+    row-gap: 40px;
     margin-top: 200px;
 
     @media(max-width: 991px){
         grid-template-columns: 1fr;
-        row-gap: 50px;
     }
 
     &__leftContent{
@@ -84,6 +84,10 @@
                 mix-blend-mode: normal;
                 filter: none;
             }
+        }
+
+        @media(max-width: 991px){
+            margin: 0 auto;
         }
 
         img{
