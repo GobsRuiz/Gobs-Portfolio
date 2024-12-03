@@ -1,0 +1,16 @@
+.c-btn{
+    max-width: max-content;
+    font-family: "SF Mono";
+    color: $primary;
+    background-color: transparent;
+    border: 1px solid $primary;
+    border-radius: $radius;
+    padding: 20px 28px;
+    line-height: 1;
+    transition: all $transition-time;
+    
+    &:hover{
+        box-shadow: 4px 4px 0 0 $primary;
+        transform: translate(-5px, -5px);
+    }
+}

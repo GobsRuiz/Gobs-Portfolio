@@ -19,6 +19,12 @@
 
 @font-face {
     font-family: "Calibre";
+    src: url("/src/assets/fonts/Calibre/CalibreSemibold.otf") format("opentype");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Calibre";
     src: url("/src/assets/fonts/Calibre/CalibreBold.otf") format("opentype");
     font-weight: 800;
 }

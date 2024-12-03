@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "scss_global": "sass --watch src/scss/global.scss src/assets/css/global.css --style compressed"
+    "scss_index": "sass --watch src/scss/indexPage.scss src/assets/css/indexPage.css --style compressed"
   },
   "repository": {
     "type": "git",
