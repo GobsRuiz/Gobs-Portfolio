@@ -1,0 +1,29 @@
+.c-sectionTitle{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+
+    h1{
+        color: $third-lightest;
+        font-size: $fontsize-heading;
+        line-height: $lineheight-heading;
+        white-space: nowrap;
+
+        span{
+            font-family: "SF Mono";
+            color: $primary;
+            font-size: $fontsize-xs;
+            line-height: 1
+        }
+    }
+
+    hr{
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: $fourth-lightest;
+        margin-left: 20px;
+        position: relative;
+        top: -3.5px;
+    }
+}
