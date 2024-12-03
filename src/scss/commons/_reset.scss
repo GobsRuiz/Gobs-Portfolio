@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    background-color: $fourth;
+}
+
+body, html{
+    font-family: "Calibre", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    border: 0;
+    outline: none;
+}
+
+img{
+    display: block;
+}

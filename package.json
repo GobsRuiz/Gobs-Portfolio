@@ -1,0 +1,21 @@
+{
+  "name": "gobs-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "scss_global": "sass --watch src/scss/global.scss src/assets/css/global.css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GR-Code-Enterprise/northin-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GR-Code-Enterprise/northin-website/issues"
+  },
+  "homepage": "https://github.com/GR-Code-Enterprise/northin-website#readme"
+}
