@@ -1,0 +1,50 @@
+.worked{
+    margin-top: 100px;
+
+    &__tabs{
+        display: grid;
+        grid-template-columns: 140px 1fr;
+        column-gap: 50px;
+        position: relative;
+
+        &__options{
+            font-size: $fontsize-xs;
+            position: relative;
+
+            &::after{
+                content: "";
+                width: 2px;
+                height: 46px;
+                background-color: $primary;
+                position: absolute;
+                top: 0;
+                left: 0;
+                transition: top .3s;
+            }
+
+            button{
+                width: 100%;
+                display: block;
+                text-align: left;
+                color: $third;
+                font-size: $fontsize-xs;
+                background-color: transparent;
+                border-left: 2px solid $fourth-lightest;
+                padding: 15px 20px;
+                
+                &:hover{
+                    color: $primary;
+                    background-color: $fourth-light;
+                }
+            }
+        }
+
+        &__content{
+            display: none;
+
+            &--show{
+                display: block;
+            }
+        }
+    }
+}
