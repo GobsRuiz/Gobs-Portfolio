@@ -1,0 +1,29 @@
+.emailFixed{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    right: 50px;
+    z-index: 9;
+
+    a{
+        width: 20px;
+        height: 20px;
+        color: $third-lightest;
+        font-size: 12px;
+        font-weight: 300;
+        position: relative;
+        top: -105px;
+        left: -5px;
+        transition: top 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+        transform: rotate(90deg);
+    }
+
+    hr{
+        background-color: $third-lightest;
+        width: 1px;
+        height: 90px;
+        margin-top: 15px;
+    }
+}

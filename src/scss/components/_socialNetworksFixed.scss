@@ -1,0 +1,47 @@
+.socialNetworksFixed{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    left: 50px;
+    z-index: 9;
+
+    a{
+        width: 20px;
+        height: 20px;
+        padding: 15px 10px;
+        position: relative;
+        top: 0;
+        transition: top 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+
+        &:hover{
+            top: -5px;
+
+            svg{
+                stroke: $primary !important;
+            }
+        }
+
+        svg{
+            width: 20px;
+            height: 20px;
+            stroke: $third-lightest;
+
+            &:hover{
+                stroke: $primary;
+            }
+        }
+    }
+
+    hr{
+        background-color: $third-lightest;
+        width: 1px;
+        height: 90px;
+        margin-top: 15px;
+    }
+}

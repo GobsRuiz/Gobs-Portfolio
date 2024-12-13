@@ -38,7 +38,7 @@
             padding: 28px 20px;
             position: relative;
             top: 0;
-            transition: top $transition-time transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
+            transition: top 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
 
             &:hover{
                 top: -7px;
