@@ -1,0 +1,140 @@
+.otherProjects{
+    margin-top: 200px;
+
+    h1{
+        text-align: center;
+        color: $third-lightest;
+        font-size: $fontsize-heading; 
+        line-height: $lineheight-heading;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    &__archer{
+        text-align: center;
+        font-family: "SF Mono";
+        color: $primary;
+        font-size: $fontsize-xs;
+        line-height: $lineheight-xs;
+        font-weight: 100;
+    }
+
+    &__cards{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 15px;
+        margin-top: 50px;
+
+        @media(max-width: 991px){
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        }
+
+        &__card{
+            border-radius: $radius;
+            background-color: $fourth-light;
+            box-shadow: 0 10px 30px -15px $div-shadow;
+            transition: all .3s;
+            box-sizing: border-box;
+            padding: 28px 20px;
+            position: relative;
+            top: 0;
+            transition: top $transition-time transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
+
+            &:hover{
+                top: -7px;
+                box-shadow: 0 20px 30px -15px $div-shadow;
+            }
+
+            &__top{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 35px;
+                position: relative;
+                z-index: 2;
+
+                &__folder{
+                    width: 40px;
+                    height: 40px;
+                    stroke: $primary;
+                }
+
+                &__btns{
+                    display: flex;
+                    
+                    a{
+                        width: 20px;
+                        height: 20px;
+                        margin-right: 20px;
+    
+                        &:last-child{
+                            margin-right: 0;
+                        }
+    
+                        svg{
+                            width: 20px;
+                            height: 20px;
+                            stroke: $third-lightest;
+    
+                            &:hover{
+                                stroke: $primary;
+                            }
+                        }
+                    }
+                }
+            }
+
+            h3{
+                margin-bottom: 10px;
+
+                a{
+                    color: $third-lightest;
+                    font-size: $fontsize-xxxl;
+                    line-height: $lineheight-xxxl;
+                    font-weight: 600;
+
+                    &::before{
+                        content: "";
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+
+                    &:hover{
+                        color: $primary;
+                    }
+                }
+            }
+
+            &__about{
+                color: $third-light;
+                font-size: $fontsize-lg;
+                line-height: $lineheight-lg;
+                font-weight: 300;
+            }
+
+            &__tags{
+                display: flex;
+                margin-top: 20px;
+
+                p{
+                    font-family: "SF Mono";
+                    color: $third-light;
+                    font-size: $fontsize-xxs;
+                    line-height: $lineheight-xxs;
+                    margin-right: 20px;
+
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    &__showMoreBtn{
+        margin: 30px auto 0 auto;
+    }
+}
