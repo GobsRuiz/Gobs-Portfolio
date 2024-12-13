@@ -37,3 +37,22 @@ img{
 hr{
     border: 0;
 }
+
+div, section{
+    scroll-behavior: smooth;
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+        background: $fourth-light !important;
+    }
+    
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: $fourth-lightest !important;
+    }
+    
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background: $primary !important;
+    }
+}
