@@ -11,13 +11,13 @@
         width: 20px;
         height: 20px;
         color: $third-lightest;
-        font-size: 12px;
+        font-size: $fontsize-md;
         font-weight: 300;
         position: relative;
-        top: -105px;
-        left: -5px;
+        top: -120px;
+        left: -3px;
         transition: top 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
-        transform: rotate(90deg);
+        writing-mode: vertical-lr;
     }
 
     hr{
