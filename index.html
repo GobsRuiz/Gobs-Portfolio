@@ -59,6 +59,13 @@
             <hr>
         </div>
 
+        <div class="notification">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from All by undefined - undefined --><path fill="#ccd6f6" d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2m-7 0a1 1 0 0 1 1 1a1 1 0 0 1-1 1a1 1 0 0 1-1-1a1 1 0 0 1 1-1M7 7h10V5h2v14H5V5h2zm.5 6.5L9 12l2 2l4.5-4.5L17 11l-6 6z"/></svg>
+            <p>
+                Lorem ipsum dolor sit amet.
+            </p>
+        </div>
+
 
 
         <section class="introduction c-container">
@@ -158,7 +165,7 @@
                         Cantacom - Smiles
                     </button>
 
-                    <button class="worked__tabs__options__btn worked__tabs__options__btn--active" data-option="cantacomNV">
+                    <button class="worked__tabs__options__btn" data-option="cantacomNV">
                         Cantacom - NV
                     </button>
                 </div>
@@ -548,7 +555,30 @@
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat delectus amet aliquid. Quos repellendus hic cumque veniam accusamus dignissimos deleniti iure, magni reprehenderit explicabo sunt, doloribus inventore minima modi error?
             </p>
 
-            <a href="" class="c-btn">
+            <div class="contact__social">
+                <a href="" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><title>GitHub</title><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+    
+                <a href="" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram"><title>Instagram</title><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                </a>
+    
+                <a href="" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><title>LinkedIn</title><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </a>
+            </div>
+
+            <div class="contact__social contact__social--mail">1
+                <a onclick="copyToBoard(this)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M4.616 19q-.691 0-1.153-.462T3 17.384V6.616q0-.691.463-1.153T4.615 5h14.77q.69 0 1.152.463T21 6.616v10.769q0 .69-.463 1.153T19.385 19zM20 6.885l-7.552 4.944q-.106.055-.214.093q-.109.037-.234.037t-.234-.037t-.214-.093L4 6.884v10.5q0 .27.173.443t.443.173h14.769q.269 0 .442-.173t.173-.443zM12 11l7.692-5H4.308zM4 6.885v.211v-.811v.034V6v.32v-.052v.828zV18z"/></svg>
+                    <p>
+                        gabrielruiztq@gmail.com
+                    </p>
+                </a>
+            </div>
+
+            <a href="mailto:gabrielruizdev@gmail.com" target="_blank" class="c-btn">
                 Diga Olá
             </a>
         </section>
@@ -563,6 +593,8 @@
 
 
     <!-- Scripts -->
+    <script src="/src/js/utils/notification.js"></script>
+    <script src="/src/js/utils/copyToBoard.js"></script>
     <!-- <script src="/src/js/components/loadingComponent.js"></script> -->
     <script src="/src/js/pages/index/worked.js"></script>
 </body>

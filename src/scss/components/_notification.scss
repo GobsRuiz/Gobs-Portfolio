@@ -1,0 +1,29 @@
+.notification{
+    display: none;
+    align-items: center;
+    background-color: $fourth-light;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 14px 20px 10px 20px;
+    position: fixed;
+    right: 10px;
+    z-index: 9;
+    box-shadow: 0 10px 30px -15px $div-shadow;
+    transition: all .3s;
+    
+    opacity: 0;
+    bottom: -10px;
+
+    svg{
+        width: 20px;
+        margin-right: 8px;
+        position: relative;
+        top: -2px;
+    }
+
+    p{
+        color: $third-lightest;
+        font-size: $fontsize-lg;
+        line-height: $lineheight-lg;
+    }
+}
