@@ -28,9 +28,14 @@
 
         &__technologies{
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-columns: repeat(4, auto);
             row-gap: 10px;
             column-gap: 30px;
+
+            @media (max-width: 768px) {
+                display: flex;
+                flex-wrap: wrap;
+            }
 
             p{
                 font-family: "SF Mono";
