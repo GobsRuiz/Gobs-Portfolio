@@ -1,4 +1,4 @@
-.header{
+    .header{
     width: 100%;
     box-sizing: border-box;
     border-bottom: 1px solid transparent;
@@ -86,7 +86,7 @@
                     margin-right: 0;
                     margin-bottom: 30px;
 
-                    span{
+                    span:nth-child(1){
                         display: block;
                     }
                 }
@@ -100,7 +100,7 @@
                     color: $primary;
                 }
     
-                span{
+                span:nth-child(1){
                     color: $primary;
                 }
             }

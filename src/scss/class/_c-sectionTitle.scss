@@ -10,7 +10,7 @@
         font-weight: 600;
         white-space: nowrap;
 
-        span{
+        span:nth-child(1){
             font-family: "Fira Code";
             font-weight: 100;
             color: $primary;
