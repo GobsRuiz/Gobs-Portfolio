@@ -81,6 +81,7 @@
                         filter: grayscale(100%) contrast(1) brightness(45%);
                         mix-blend-mode: multiply;
                         border-radius: $radius;
+                        filter: drop-shadow(0px 0px 1px #233554);
 
                         @media(max-width: 991px){
                             filter: grayscale(100%) contrast(.8) brightness(35%);
