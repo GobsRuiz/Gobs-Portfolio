@@ -26,6 +26,68 @@
         font-size: $fontsize-xl;
         line-height: $lineheight-xl;
         margin: 0 auto 30px auto;
+
+        @media(max-width: 991px){
+            margin-bottom: 15px;
+        }
+    }
+
+    &__social{
+        display: none;
+        justify-content: center;
+        align-items: center;
+        // margin-bottom: -10px;
+
+        &--mail{
+            margin-bottom: 20px;
+        }
+
+        @media(max-width: 991px){
+            display: flex;
+        }
+
+        a{
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            padding: 10px 10px;
+            position: relative;
+            top: 0;
+            transition: top 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    
+            &:last-child{
+                margin-bottom: 0;
+            }
+    
+            &:hover{
+                top: -5px;
+    
+                svg{
+                    stroke: $primary !important;
+                }
+
+                p{
+                    color: $primary;
+                }
+            }
+    
+            svg{
+                width: 20px;
+                height: 20px;
+                stroke: $third-lightest;
+    
+                &:hover{
+                    stroke: $primary;
+                }
+            }
+
+            p{
+                color: $third;
+                font-size: $fontsize-md;
+                line-height: $lineheight-md;
+                margin-left: 10px;
+            }
+        }
     }
 
     .c-btn{

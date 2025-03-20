@@ -7,6 +7,10 @@
     left: 50px;
     z-index: 9;
 
+    @media(max-width: 991px){
+        display: none;
+    }
+
     a{
         width: 20px;
         height: 20px;
