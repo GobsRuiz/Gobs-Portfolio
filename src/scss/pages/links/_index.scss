@@ -1,0 +1,172 @@
+.linksPage{
+    max-width: 500px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 50px 20px;
+    position: relative;
+
+    &__divFloat{
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+
+        &__language{
+            width: 40px;
+            height: 40px;
+            background-color: $fourth-lightest;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+    
+            svg{
+                width: 20px;
+            }
+        }
+        
+        &__ellipsis{
+            position: relative;
+
+            &__btn{
+                width: 40px;
+                height: 40px;
+                background-color: $fourth-lightest;
+                border-radius: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+        
+                svg{
+                    width: 20px;
+                }
+        
+                &:hover{
+                    background-color: $primary;
+        
+                    svg{
+                        g{
+                            stroke: $fourth-light;
+                        }
+                    }
+                }
+            }
+
+            &__menu{
+                display: none;
+                background-color: $fourth-lightest;
+                border-radius: $radius;
+                box-sizing: border-box;
+                padding: 10px;
+                position: absolute;
+                opacity: 0;
+                top: 40px;
+                left: 0;
+                transition: opacity .3s, top .3s,;
+
+                button, a{
+                    display: flex;
+                    align-items: center;
+                    background-color: transparent;
+                    color: $third-lightest;
+                    font-size: $fontsize-xs;
+                    font-weight: 500;
+                    white-space: nowrap;
+                    border-radius: $radius;
+                    padding: 5px;
+
+                    &:hover{
+                        color: $fourth-light;
+                        background-color: $primary;
+
+                        svg{
+                            path{
+                                fill: $fourth-light;
+                            }
+                        }
+                    }
+
+                    svg{
+                        width: 16px;
+                        height: auto;
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+
+    &__me{
+        display: block;
+        width: 96px;
+        height: 96px;
+        border-radius: 9999px;
+        object-fit: cover;
+        margin: 0 auto 20px auto;
+    }
+
+    h1{
+        text-align: center;
+        color: $third-lightest;
+        font-size: $fontsize-xxl;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+
+    h2{
+        text-align: center;
+        color: $third-lightest;
+        font-size: $fontsize-md;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+
+    &__social{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+
+        a{
+            display: flex;
+            margin-right: 5px;
+            position: relative;
+            top: 0;
+            transition: top .3s;
+            padding: 10px;
+
+            &:hover{
+                top: -2px;
+            }
+
+            svg{
+                width: 25px;
+                stroke: $third-lightest;
+            }
+        }
+    }
+
+    &__links{
+        a{
+            text-align: center;
+            font-size: $fontsize-lg;
+            color: $fourth-light;
+            background-color: $primary;
+            border-radius: $radius;
+            margin-bottom: 0;
+            margin-bottom: 15px;
+            padding: 20px 10px 15px 10px;
+            transition: transform .3s;
+
+            &:last-child{
+                margin-bottom: 0;
+            }
+
+            &:hover{
+                transform: scale(1.02);
+            }
+        }
+    }
+}

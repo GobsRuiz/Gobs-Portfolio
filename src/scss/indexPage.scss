@@ -7,11 +7,10 @@
 @import "commons/header";
 @import "commons/footer";
 
+@import "class/c-display";
 @import "class/c-container";
 @import "class/c-btn";
 @import "class/c-sectionTitle";
-
-@import "mixins/fonts";
 
 @import "components/loading";
 @import "components/socialNetworksFixed";
