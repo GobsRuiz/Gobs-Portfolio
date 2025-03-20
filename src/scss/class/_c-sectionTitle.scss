@@ -7,10 +7,12 @@
         color: $third-lightest;
         font-size: $fontsize-heading;
         line-height: $lineheight-heading;
+        font-weight: 600;
         white-space: nowrap;
 
         span{
-            font-family: "SF Mono";
+            font-family: "Fira Code";
+            font-weight: 100;
             color: $primary;
             font-size: $fontsize-xs;
             line-height: 1

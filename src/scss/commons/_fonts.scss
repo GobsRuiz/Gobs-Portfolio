@@ -67,3 +67,32 @@
     src: url("/src/assets/fonts/SFMono/SFMono-Heavy.otf") format("opentype");
     font-weight: 900;
 }
+
+
+
+// Fira Code
+@font-face {
+    font-family: "Fira Code";
+    src: url("/src/assets/fonts/Fira/FiraCode-Light.ttf") format("truetype");
+    font-weight: 100;
+}
+@font-face {
+    font-family: "Fira Code";
+    src: url("/src/assets/fonts/Fira/FiraCode-Regular.ttf") format("truetype");
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Fira Code";
+    src: url("/src/assets/fonts/Fira/FiraCode-Medium.ttf") format("truetype");
+    font-weight: 600;
+}
+@font-face {
+    font-family: "Fira Code";
+    src: url("/src/assets/fonts/Fira/FiraCode-SemiBold.ttf") format("truetype");
+    font-weight: 800;
+}
+@font-face {
+    font-family: "Fira Code";
+    src: url("/src/assets/fonts/Fira/FiraCode-Bold.ttf") format("truetype");
+    font-weight: 900;
+}
