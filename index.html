@@ -38,6 +38,53 @@
 
 
 <body>
+    <header class="header">
+        <div class="header__container c-container">
+            <a href="#introduction" class="header__brand">
+                <svg id="logo" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 84 96"><title>Logo</title><g transform="translate(-8.000000, -2.000000)"><g transform="translate(11.000000, 5.000000)">
+                    <polygon id="Shape" stroke="#64FFDA" fill="transparent" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" points="39 0 0 22 0 67 39 90 78 68 78 23">
+                    </polygon>
+                    </g></g><text x="28" y="65" fill="#64FFDA" font-size="50px" font-family="Consolas, serif">G</text>
+                </svg>
+            </a>
+    
+            <div class="header__right">
+                <nav class="header__right__nav">
+                    <div>
+                        <a href="#aboutMe">
+                            <span>01.</span>
+                            About
+                        </a>
+        
+                        <a href="#worked">
+                            <span>02.</span>
+                            Experiência
+                        </a>
+        
+                        <a href="#projects">
+                            <span>03.</span>
+                            Projetos
+                        </a>
+                        <a href="#contact">
+                            <span>04.</span>
+                            Contato
+                        </a>
+                    </div>
+                </nav>
+        
+                <!-- <button class="header__right__resume c-btn c-btn--small">
+                    Currículo
+                </button> -->
+
+                <button class="header__right__burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
     <main>
         <div class="loadingComponent">
             <svg id="logo" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 84 96"><title>Logo</title><g transform="translate(-8.000000, -2.000000)"><g transform="translate(11.000000, 5.000000)">
@@ -79,7 +126,7 @@
 
 
 
-        <section class="introduction c-container">
+        <section id="introduction" class="introduction c-container">
             <h3>
                 Olá, meu nome é
             </h3>
@@ -592,6 +639,7 @@
     <!-- Scripts -->
     <script src="/src/js/utils/notification.js"></script>
     <script src="/src/js/utils/copyToBoard.js"></script>
+    <script src="/src/js/commons/header.js"></script>
     <script src="/src/js/components/loadingComponent.js"></script>
     <script src="/src/js/pages/index/worked.js"></script>
 </body>

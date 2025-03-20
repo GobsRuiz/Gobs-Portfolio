@@ -13,4 +13,8 @@
         box-shadow: 4px 4px 0 0 $primary;
         transform: translate(-5px, -5px);
     }
+
+    &--small{
+        padding: 10px 18px;
+    }
 }

@@ -1,0 +1,160 @@
+.header{
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 1px solid transparent;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    transition: padding .3s, border .3s;
+
+    &--scroll{
+        background-color: $fourth;
+        border-color: $fourth-lightest;
+    }
+    
+    &__container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-sizing: border-box;
+    }
+
+    &__brand{
+        width: 35px;
+        display: flex;
+    }
+
+    &__right{
+        display: flex;
+        align-items: center;
+        
+        &__nav{
+            margin-right: 30px;
+
+            > div{
+                display: flex;
+                align-items: center;
+            }
+
+            @media(max-width: 991px){
+                display: none;
+                opacity: 0;
+                transition: opacity .15s;
+
+                > div{
+                    min-width: 150px;
+                    height: 100vh;
+                    flex-direction: column;
+                    justify-content: center;
+                    background-color: $fourth;
+                    border-left: 1px solid $fourth-lightest;
+                    box-sizing: border-box;
+                    margin-right: 0;
+                    padding: 20px;
+                    position: absolute;
+                    transition: right .25s;
+                    top: 0;
+                    right: -150px;
+                    z-index: 99;
+                }
+
+                &::after{
+                    content: '';
+                    width: 100vw;
+                    height: 100vh;
+                    box-sizing: border-box;
+                    background-color: $div-shadow;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+            }
+
+            a{
+                font-family: "SF Mono" !important;
+                font-weight: 300;
+                color: $third-lightest;
+                font-size: $fontsize-xxs;
+                margin-right: 20px;
+
+                @media(max-width: 991px){
+                    text-align: center;
+                    font-size: $fontsize-md;
+                    line-height: $lineheight-xl;
+                    margin-right: 0;
+                    margin-bottom: 30px;
+
+                    span{
+                        display: block;
+                    }
+                }
+
+                &:last-child{
+                    margin-right: 0;
+                    margin-bottom: 0;
+                }
+    
+                &:hover{
+                    color: $primary;
+                }
+    
+                span{
+                    color: $primary;
+                }
+            }
+        }
+
+        &__burger{
+            display: none;
+            background-color: transparent;
+            position: relative;
+            z-index: 99;
+
+            @media(max-width: 991px){
+                display: block;
+            }
+
+            span{
+                display: block;
+                width: 35px;
+                height: 2px;
+                background-color: #fff;
+                border-radius: 4px;
+                margin-bottom: 8px;
+                position: relative;
+                transform: rotate(0);
+                top: 0;
+                left: 0;
+                transition: all .3s;
+
+                &:last-child{
+                    margin-bottom: 0;
+                }
+
+                &:nth-child(1){
+                    transform-origin: top left;
+                }
+                &:nth-child(3){
+                    transform-origin: top left;
+                }
+            }
+
+            &--open{
+                span:nth-child(1){
+                    left: 3px;
+                    transform: rotate(45deg);
+                }
+                span:nth-child(2){
+                    transform: translateX(-20px);
+                    opacity: 0;
+                }
+                span:nth-child(3){
+                    top: 5px;
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+    }
+}
