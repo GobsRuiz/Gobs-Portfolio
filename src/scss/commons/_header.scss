@@ -106,6 +106,14 @@
             }
         }
 
+        &__resume{
+            display: block;
+
+            @media(max-width: 991px){
+                display: none;
+            }
+        }
+
         &__burger{
             display: none;
             background-color: transparent;
